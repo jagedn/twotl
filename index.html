@@ -162,7 +162,7 @@ function RandomWordComplete(data){
 }                
                 
 $( document ).ready(function(){
-   $("#word").keypress(function(event){
+   $("#word").keyup(function(event){
        $("#result").text(calculateWeight($("#word").val())+'%');
    });
 });
